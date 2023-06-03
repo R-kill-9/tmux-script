@@ -19,7 +19,7 @@ fi
 # New detached tmux session
 tmux new-session -d -s "tmux_$1"
 
-############### GENERAL CONFIG ###############
+############### AUXILIAR CONFIG ###############
 
 # Create a new window and name it
 tmux new-window -n "Auxiliar"
