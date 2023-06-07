@@ -7,6 +7,19 @@ To execute use the command:
 ```bash
 ./mkhtb.sh <directory_name>
 ```
+ I recommend creating an alias in the ~/.bashrc file.
+ - Open the file
+ ```bash
+ vi ~/.bashrc
+ ```
+ - Create the alias
+ ```bash
+ alias mkt='/usr/bin/mkhtb.sh'
+ ```
+ - Save the changes
+ ```bash
+ source ~/.bashrc
+ ```
 
 ## Directory hierarchy
 As mentioned before, the script accesses the <directory_name> and starts tmux. In case the directory doesn't exist, it creates it with the following hierarchy:
