@@ -30,24 +30,14 @@ And you can use it in any directory.
 As mentioned before, the script accesses the <directory_name> and starts tmux. In case the directory doesn't exist, it creates it with the following hierarchy:
 
     <directory_name>
-    ├── evidence
-    │   ├── credentials
-    │   ├── data
-    │   └── screenshots
-    ├── logs
-    │
+    ├── evidences
     ├── scans
-    │   
-    ├── scope
-    │  
     └── tools
    
    
 ## Windows created
 - Main
 - Auxiliar
-- Evidence
-- Logs
+- Evidences
 - Scans
-- Scope
 - Tools
