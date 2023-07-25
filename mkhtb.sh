@@ -7,7 +7,7 @@
 if [ ! -d "$1" ]; then
   mkdir "$1"
   cd "$1"
-  mkdir evidence evidence/credentials evidence/data evidence/screenshots logs scans scope tools
+  mkdir evidences scans tools
 else
   cd "$1"
 fi
@@ -41,11 +41,6 @@ then
   tmux select-pane -t 1
   tmux split-window -v
 
-  # Split the second pane horizontally
-  tmux select-pane -t 0
-  tmux split-window -v
-
-
 
   ############### MAIN CONFIG ##############
 
@@ -62,10 +57,6 @@ then
   tmux select-pane -t 1
   tmux split-window -v
 
-  # Split the second pane horizontally
-  tmux select-pane -t 0
-  tmux split-window -v
-
   # Split the third pane horizontally
   tmux select-pane -t 3
   tmux split-window -v
@@ -75,7 +66,7 @@ then
   ############### Create Windows Directories ##############
 
   # Create a new window and name it
-  cd evidence
+  cd evidences
   tmux new-window -n "Evidence"
   tmux select-window -t 2
   cd ..
@@ -87,21 +78,9 @@ then
   cd ..
 
   # Create a new window and name it
-  cd logs
-  tmux new-window -n "Logs"
-  tmux select-window -t 4
-  cd ..
-
-  # Create a new window and name it
-  cd scope
-  tmux new-window -n "Scope"
-  tmux select-window -t 5
-  cd ..
-
-  # Create a new window and name it
   cd tools
   tmux new-window -n "Tools"
-  tmux select-window -t 6
+  tmux select-window -t 4
 
   fi
 # Select Main window to start
