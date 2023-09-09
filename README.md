@@ -2,6 +2,9 @@
 Script that starts tmux by creating or accessing a directory used for Hack The Box. Feel free to modify it as you wish to apply it to your projects.
 Also, you can review my tmux.conf repository to see the configuration I use for the tmux session used in this script.
 
+![screenshot](https://github.com/R-kill-9/tmux.conf/blob/main/mkt.png)
+
+
 ## Execution
 To execute use the command:
 ```bash
