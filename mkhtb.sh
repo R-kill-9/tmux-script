@@ -57,9 +57,6 @@ then
   tmux select-pane -t 1
   tmux split-window -v
 
-  # Split the third pane horizontally
-  tmux select-pane -t 3
-  tmux split-window -v
 
 
 
@@ -88,4 +85,4 @@ tmux select-window -t 0
 
 # Attach tmux session
 tmux attach-session -t "tmux_$1"
-
+                                
