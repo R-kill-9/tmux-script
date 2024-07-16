@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# User inputs: ./mkhtb <directory_name>
+# User input: mkt <directory_name>
 
 
 # Create directories
@@ -29,19 +29,6 @@ then
   # New detached tmux session
   tmux new-session -d -s "tmux_$1"
 
-  ############### AUXILIAR CONFIG ###############
-
-  # Create a new window and name it
-  tmux new-window -n "Auxiliar"
-
-  # Split the window vertically
-  tmux split-window -h
-
-  # Split the first pane horizontally
-  tmux select-pane -t 1
-  tmux split-window -v
-
-
   ############### MAIN CONFIG ##############
 
   # Select the Main window
@@ -54,10 +41,16 @@ then
   tmux split-window -h
 
   # Split the first pane horizontally
-  tmux select-pane -t 1
+  tmux select-pane -t 0
   tmux split-window -v
 
+  ############### AUXILIAR CONFIG ###############
 
+  # Create a new window and name it
+  tmux new-window -n "Auxiliar"
+
+  # Split the window vertically
+  tmux split-window -h
 
 
   ############### Create Windows Directories ##############
@@ -81,8 +74,8 @@ then
 
   fi
 # Select Main window to start
-tmux select-window -t 0
+tmux select-window -t "tmux_$1:Main"
 
 # Attach tmux session
 tmux attach-session -t "tmux_$1"
-                                
+
