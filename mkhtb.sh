@@ -7,7 +7,7 @@
 if [ ! -d "$1" ]; then
   mkdir "$1"
   cd "$1"
-  mkdir evidences scans tools
+  mkdir evidences tools
 else
   cd "$1"
 fi
@@ -41,16 +41,8 @@ then
   tmux split-window -h
 
   # Split the first pane horizontally
-  tmux select-pane -t 0
+  tmux select-pane -t 1
   tmux split-window -v
-
-  ############### AUXILIAR CONFIG ###############
-
-  # Create a new window and name it
-  tmux new-window -n "Auxiliar"
-
-  # Split the window vertically
-  tmux split-window -h
 
 
   ############### Create Windows Directories ##############
@@ -59,12 +51,6 @@ then
   cd evidences
   tmux new-window -n "Evidence"
   tmux select-window -t 2
-  cd ..
-
-  # Create a new window and name it
-  cd scans
-  tmux new-window -n "Scans"
-  tmux select-window -t 3
   cd ..
 
   # Create a new window and name it
