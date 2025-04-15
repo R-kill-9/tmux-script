@@ -40,8 +40,8 @@ then
   # Split the window vertically
   tmux split-window -h
 
-  # Split the first pane horizontally
-  tmux select-pane -t 1
+  # Split the second pane horizontally
+  tmux select-pane -t 2
   tmux split-window -v
 
 
