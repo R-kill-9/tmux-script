@@ -22,7 +22,7 @@ To execute use the command:
  ```
  - Create the alias
  ```bash
- alias mkt='/usr/bin/mkhtb.sh'
+ alias mkt='/usr/bin/mkt.sh'
  ```
  - Save the changes
  ```bash
