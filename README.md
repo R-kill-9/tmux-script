@@ -13,7 +13,7 @@ In case you want to copy some text in the terminal, I recommend using the zoom m
 ## Execution
 To execute use the command:
 ```bash
-./mkhtb.sh <directory_name>
+./mkt.sh <directory_name>
 ```
  But I recommend creating an alias in the ~/.bashrc file.
  - Open the file
