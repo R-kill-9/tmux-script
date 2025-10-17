@@ -9,7 +9,7 @@ To execute use the command:
 ```bash
 ./mkt.sh <directory_name>
 ```
- But I recommend creating an alias in the ~/.bashrc file.
+ But I recommend creating an alias in the ~/.zshrc file.
  - Open the file
  ```bash
  vi ~/.zshrc
@@ -39,7 +39,7 @@ As mentioned before, the script accesses the <directory_name> and starts tmux. I
    
 ## Recommendations
 In case you want to copy some text in the terminal, I recommend using the zoom mode: 
-- 'Ctrl a + Z`
+- `Ctrl a + Z`
 - Copy text with the mouse
 - `Ctrl a + Z`
 
